@@ -1,0 +1,11 @@
+:root{
+  --color-gray-900: #212529; /* Muy oscuro - Jet Black */
+  --color-gray-800: #343a40; /* Carbón - Charcoal Gray */
+  --color-gray-700: #495057; /* Gris oscuro - Slate Gray */
+  --color-gray-600: #6c757d; /* Gris acero - Steel Gray */
+  --color-gray-500: #adb5bd; /* Gris medio - Light Gray */
+  --color-gray-400: #ced4da; /* Gris claro - Cloud Gray */
+  --color-gray-300: #dee2e6; /* Gris humo - Smoke Gray */
+  --color-gray-200: #e9ecef; /* Gris neblina - Mist Gray */
+  --color-gray-100: #f8f9fa; /* Casi blanco - Ghost White */
+}

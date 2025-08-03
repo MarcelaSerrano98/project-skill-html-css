@@ -1,0 +1,167 @@
+*{ 
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-image: url(/img/login/vulplex.com-688e199e1fe47.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.container-form{
+    max-width: 900px;
+    height: 500px;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, .6);
+    transition: all 1s ease;
+    margin: 10px;
+}
+
+.container-info{
+    background-color: rgb(0, 0, 0, 0.7);
+    width: 40%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+
+.container-title{
+    width: 100%;
+    padding: 0 30px;
+}
+
+.container-title h1{
+    font-size: 2.5rem;
+    color: #f8f9fa;
+
+}
+
+.container-title p {
+    margin: 15px 0;
+    color: #e9ecef;
+}
+
+.container-title input{
+    background-color: transparent;
+    outline: none;
+    border: solid 2px #6c757d ;
+    color: #e9ecef;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color .3s ease;
+}
+
+.container-title input:hover{
+    cursor: pointer;
+    border: none;
+    background-color: #6c757d;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.container-register{
+    background-color: rgba(62, 59, 59, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.info-register{
+    padding: 0 30px;
+}
+
+.info-register h1{
+    font-size: 2rem;
+    color: #f8f9fa;
+}
+
+.info-register p{
+    margin: 15px 0;
+    color: #e9ecef;
+}
+
+.items-icons{
+    margin: 15px 0;
+}
+
+.items-icons i{
+    border: solid thin #6c757d;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 0 10px;
+    color: #495057; 
+    transition: background-color .3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.items-icons i:hover{
+    cursor: pointer;
+    border: none;
+    background-color: #6c757d; 
+}
+
+.form {
+    margin: 30px 0 0 0;
+}
+
+.form label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    background-color: rgb(108, 117, 125, .9);
+    padding: 0 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, .8);
+
+}
+
+.form label input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: rgb(108, 117, 125, .2);
+    color: #e9ecef;
+    transition: background-color .3s ease;
+
+}
+.form label input::placeholder{
+    color: #e9ecef;
+}
+
+.form label i {
+    color: #495057; 
+}
+
+.button{
+    background-color: transparent;
+    outline: none;
+    border: solid 2px #6c757d ;
+    color: #e9ecef;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color .3s ease;
+}
+
+
+.button:hover{
+    cursor: pointer;
+    border: none;
+    background-color: #6c757d;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}

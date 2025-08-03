@@ -126,7 +126,7 @@ body {
 }
 
 .search {
-    background-color: var(--color-gray-300);
+    background-color: white;
 
     position: relative;
     height: 50px;
@@ -152,14 +152,19 @@ body {
     width: 300px;
     top: 5px;
     left: 30px;
-    background-color: var(--color-gray-300);
-    border: none
+    background-color: white ;
+    border: none;
+    outline: none;
 }
 
 .bi-bell-fill {
     /* background-color: darkblue; */
     color: white;
     margin: auto;
+}
+.bi-bell-fill:hover{
+    cursor: pointer;
+    color: yellow;
 }
 
 .info {
@@ -233,9 +238,8 @@ body {
     justify-content: center;
     padding: 20px;
     margin-top: 80px;
-
-
 }
+
 
 .content-recommend {
     display: flex;
@@ -244,20 +248,68 @@ body {
     /* background-color: white; */
     width: 318px;
     height: 262px;
-    margin: auto;
-    margin-top: 20px;
+    /* margin: auto; */
+    margin: 20px 10px 5px 10px;
     border-radius: 10px;
     box-shadow: 0 4px 30px rgba(21, 21, 21, 0.8);
 }
-
+.content-recommend:hover{
+   background-color: rgb(0, 0, 0, .2);
+   cursor: pointer;
+   border: 1px solid black;
+}
+.content-top {
+    margin: 10px;
+    margin-left:15px ;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.content-top img{
+    margin-top: 2px;
+    height: 24px;
+    width: 20px;
+}
+.top-recommend{
+    margin-top: 2px;
+    font-size: 21px;
+    color: var(--color-gray-700);
+}
 .img-car {
     /* background-color: #212529; */
-    margin-top: 10px;
+    margin: 15px 10px 10px 15px;
+    margin-right: 5px;
     padding: 0;
-    width: 100%;
+    width: 273px;
     height: 93px;
-    object-fit: contain;
 }
-.content-recommend  span{
-    font-size: 21px;
+.content-recommend h2{
+    /* background-color: red; */
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+.content-bottom{
+    /* margin: 10px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 20px;
+}
+.bottom-left{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.content-bottom span{
+    color: var(--color-gray-700);
+    font-size: 15px;
+}
+.content-bottom img{
+    height: 20px;
+    width: 20px;
 }

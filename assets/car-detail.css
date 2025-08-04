@@ -20,8 +20,8 @@
 }
 
 /* *{
-   
-    outline: 1px solid red;
+    padding: 0;
+    margin: 0;
 } */
 html,
 body {
@@ -32,10 +32,11 @@ body {
 
 body {
     /* margin: 5px; */
+    overflow-x: hidden;
     background-color: white;
     height: 100%;
     width: 100%;
-     /* max-width: 1400px;  */
+    /* max-width: 1400px;  */
 }
 
 .container-body {
@@ -66,6 +67,8 @@ body {
     /* background-color: antiquewhite; */
     height: 100vh;
     position: sticky;
+    /* position: fixed;
+    left: 0; */
     top: 0;
     width: 300px;
     border-right: 1px solid white;
@@ -73,14 +76,13 @@ body {
 }
 
 .sidebar-nav {
-    /* background-color: aqua; */
-    height: 80%;
+    background-color: black;
+    /* height: 80%; */
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 150px;
-
+    justify-content: space-between;
 }
-
 
 .items-list {
     /* background-color: yellow; */
@@ -90,6 +92,7 @@ body {
 }
 
 .item {
+    /* background-color: #ced4da; */
     font-size: 18px;
     height: 30px;
     width: 130px;
@@ -120,7 +123,6 @@ a:hover {
 .body-page {
     /* background-color: aquamarine; */
     width: 100%;
-    /* max-width: 1700px;  */
 }
 
 .header {
@@ -133,26 +135,27 @@ a:hover {
 }
 
 .container-header {
+    /* background-color:black; */
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
-.booking-fill {
+.assets-fill {
     background-color: white;
     width: 205px;
     border-radius: 5px;
     box-shadow: 0px 3px 10px rgba(169, 159, 159, 0.5);
 }
-.booking-fill a{
+.assets-fill a{
     color: black;
 }
 
-.booking-fill a:hover {
+.assets-fill a:hover {
     color: var(--color-gray-800);
 
 }
+
 .search {
     background-color: white;
 
@@ -220,189 +223,205 @@ a:hover {
     height: 50px;
 }
 
-.container-recomend {
-    /* background-color: #173d62; */
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    /* grid-template-columns: repeat(3, 1fr); */
-    gap: 40px;
-    min-height: 100%;
-    /* justify-content: center; */
-    padding: 30px;
+.principal {
+    /* background-color: aqua; */
+    height: 98%;
 }
 
+.container-assets {
+    /* background-color: blue; */
+    width: 100%;
+    height: 100%;
+    margin: 5px;
 
-.content-recommend {
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(241, 235, 235, 0.6);
-    /* background-color: white; */
-    min-width: 318px;
-    height: 262px;
-    /* margin: auto; */
-    margin: 20px 10px 5px 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 30px rgba(21, 21, 21, 0.8);
-    position: relative;
 }
 
-.content-recommend:hover {
-    background-color: rgb(0, 0, 0, .2);
-    cursor: pointer;
-    border: 1px solid black;
-}
-
-.content-top {
-    position: absolute;
-    top: 12px;
-    left: 15px;
+.container-details {
+    /* background-color: red ; */
+    width: 100%;
+    height: 50%;
     display: flex;
     flex-direction: row;
     gap: 10px;
+    padding-top: 10px;
 }
 
-.content-top img {
-    margin-top: 2px;
-    height: 24px;
-    width: 20px;
+.content-img-details {
+    /* background-color: gray; */
+    width: 50%;
+    height: 100%;
 }
 
-.top-recommend {
-    margin-top: 2px;
-    font-size: 21px;
-    color: var(--color-gray-700);
-}
-
-.img-car-bmw {
-    /* background-color: #212529; */
-    min-width: 275px;
-    min-height: 115px;
-    margin: 60px 10px 0px 15px;
-
-}
-
-.img-car-bmw-first {
-    /* background-color: #212529; */
-    margin: 30px 10px 0px 15px;
-
-    min-width: 275px;
-    min-height: 115px;
-}
-
-.img-car-lamborgini {
-    /* background-color: #212529; */
-    margin: 60px 10px 0px 15px;
-
-
-    min-width: 275px;
-    min-height: 115px;
-}
-
-.img-car-volvo {
-    /* background-color: #212529; */
-    min-width: 273px;
-    min-height: 93px;
-    margin: 60px 10px 0px 15px;
-    /* margin: auto; */
+.content-img-details h1 {
+    /* background-color: aqua; */
+    width: 80%;
+    height: 10%;
+    margin: 10px;
+    margin-left: 40px;
+    font-size: 30px;
 
 
 }
 
-.img-car-porshe {
-    /* background-color: #212529; */
-    min-width: 270px;
-    min-height: 83px;
-    margin: 60px 10px 0px 15px;
-
-}
-
-.img-car-mercedes {
-    /* background-color: #212529; */
-    min-width: 263px;
-    min-height: 109px;
-    margin: 50px 10px 0px 15px;
-    /* margin: auto; */
-
-}
-
-.img-car-jeep {
-    /* background-color: #212529; */
-    min-width: 258px;
-    min-height: 113px;
-    margin: 50px 25px 0px 15px;
-}
-
-.img-car-mercedes-large {
-    /* background-color: #212529; */
-    min-width: 261px;
-    min-height: 6px;
-    margin: 60px 10px 0px 15px;
-
-
-}
-
-.content-recommend h2 {
-    /* background-color: red; */
-    position: absolute;
-    bottom: 25px;
-    left: 15px;
-    font-size: 20px;
-    font-weight: bold;
-
-}
-
-.content-bottom {
+.content-img-details img {
+    /* background-color: aquamarine; */
+    width: 80%;
+    height: 85%;
     /* margin: 10px; */
-    position: absolute;
+    margin-left: 40px;
+
+}
+
+.content-details {
+    /* background-color: gray; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 40px;
+}
+
+.content-price {
+    /* background-color: blueviolet; */
+    height: 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    bottom: 15px;
-    left: 15px;
+    /* margin: 10px; */
 }
 
-.bottom-left {
-    /* background-color: red; */
+.content-price h2 {
+    /* background-color: aqua; */
+    height: 100%;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.content-details-person {
+    background-color: rgba(241, 235, 235, 0.6);
+    border-radius: 10px;
+    width: 100%;
+    height: 40%;
+    box-shadow: 0px 0px 5cap rgba(159, 155, 155, 0.6);
+}
+
+.content-details-cars {
+    /* background-color: green; */
+    width: 100%;
+    height: 40%;
+    padding-top: 20px;
+    /* margin-left: 40px; */
+}
+
+/* .content-details-cars img{
+
+} */
+.container-gallery {
+    /* background-color:   tomato; */
+    /* padding-top: 20px; */
+     /* padding-inline: 40px;  */
+    height: 45%;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+
+}
+
+
+.content-gallery {
+    /* background-color: yellow; */
+     max-width: 1200px; 
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+
+}
+
+.person {
+    /* background-color: aqua; */
+    width: 100%;
+    height: 55%;
+}
+
+.info-person img {
+    /* position: absolute; */
+    border-radius: 50px;
+    top: 5px;
+    left: 16px;
+    /* padding-top: 10px ; */
+}
+
+.info-person {
+    /* background-color: blue; */
+    width: 50%;
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 5px;
+    margin-left: 20px;
+    padding-top: 10px;
+
 }
 
-.content-bottom span {
-    color: var(--color-gray-700);
-    font-size: 15px;
+.ubication {
+    margin: 10px 40px;
+    position: relative;
 }
 
-.content-bottom img {
-    height: 20px;
-    width: 20px;
+.visit-profile {
+    position: absolute;
+    right: 10px;
+    color: var(--color-gray-500);
 }
 
-
-@keyframes zoomIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
+.contact {
+    background-color: var(--color-gray-600);
+    /* width: 100%; */
+    height: 38%;
+    display: flex;
+    flex-direction: row;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left: 40px;
+    padding-top: 5px;
+    position: relative;
 }
 
-.content-recommend {
-  animation: zoomIn 0.8s ease-in-out;
-  animation-fill-mode: both;
+.message {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    color: var(--color-gray-500);
 }
 
-.content-recommend:hover .img-car-bmw-first,
-.content-recommend:hover .img-car-lamborgini,
-.content-recommend:hover .img-car-volvo,
-.content-recommend:hover .img-car-bmw,
-.content-recommend:hover .img-car-jeep,
-.content-recommend:hover .img-car-porshe,
-.content-recommend:hover .img-car-mercedes-large,
-.content-recommend:hover .img-car-mercedes {
-  transform: scale(1.1) translateY(-5px);
-  transition: transform 0.4s ease;
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.next {
+    /* background-color: #212529; */
+    width: 200px;
+    height: 30px;
+    margin-left: 42%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.next a {
+
+    width: 80px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+
 }

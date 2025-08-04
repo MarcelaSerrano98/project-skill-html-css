@@ -375,3 +375,31 @@ a:hover {
     height: 20px;
     width: 20px;
 }
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.content-recommend {
+  animation: zoomIn 0.8s ease-in-out;
+  animation-fill-mode: both;
+}
+
+.content-recommend:hover .img-car-bmw-first,
+.content-recommend:hover .img-car-lamborgini,
+.content-recommend:hover .img-car-volvo,
+.content-recommend:hover .img-car-bmw,
+.content-recommend:hover .img-car-jeep,
+.content-recommend:hover .img-car-porshe,
+.content-recommend:hover .img-car-mercedes-large,
+.content-recommend:hover .img-car-mercedes {
+  transform: scale(1.1) translateY(-5px);
+  transition: transform 0.4s ease;
+}

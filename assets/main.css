@@ -74,10 +74,11 @@ body {
 .sidebar-nav {
     background-color: black;
     /* height: 80%; */
+    /* background-color: blue; */
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .items-list {

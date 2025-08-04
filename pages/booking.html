@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/main.css">
+    <title>Booking</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <title>Seyra</title>
+    <link rel="stylesheet" href="../assets/booking.css">
 </head>
 
 <body>
@@ -17,11 +17,11 @@
                 <img class="logo" src="../img/assets/logo-seyra.png" alt="logo-seyra" title="logo-seyra">
             </figure>
             <nav class="sidebar-nav">
-                <ul class="items-list">
-                    <li class="item"><img class="icons" src="../img/assets/dashboard icon.png" alt="icon-dahsboard"><a href="">Dashboard</a>
+                <ul class="items-list top">
+                     <li class="item"><img class="icons" src="../img/assets/dashboard icon.png" alt="icon-dahsboard"><a href="">Dashboard</a>
                         </li>
                     <li class="item"><img class="icons" src="../img/assets/assets.png" alt="icon-assets"> <a href="">Assets</a></li>
-                    <li class="item"><img class="icons" src="../img/assets/booking.png" alt="icon-booking"><a href="../pages/booking.html">Booking</a></li>
+                    <li class="item booking-fill"><img class="icons" src="../img/assets/booking.png" alt="icon-booking"><a href="../pages/booking.html">Booking</a></li>
                     <li class="item"><img class="icons" src="../img/assets/sellcars.png" alt="icon-sellcars"><a href="">Sell Cars</a> 
                     </li>
                     <li class="item"><img class="icons" src="../img/assets/services.png" alt="icon-services"><a href="">Services</a> 
@@ -32,7 +32,6 @@
                     </li>
                     <li class="item"><img src="../img/assets/log out.png" alt="icon-logout" class="icons"> <a href="">Log out</a></li>
                 </ul>
-
             </nav>
         </aside>
         <section class="body-page">
@@ -52,38 +51,13 @@
 
             </header>
             <main class="principal">
-                <section class="container-logos">
-                    <div class="logo-cars">
-                        <a href="">
-                            <img class="logo-lamborgini" src="../img/assets/logo-Lamborghini.png" alt="lamborgini">
-
-                        </a>
-                    </div>
-                    <div class="logo-cars">
-                        <a href="">
-                            <img class="logo-bmw" src="../img/assets/logo-BMW.png" alt="bmw">
-
-                        </a>
-                    </div>
-                    <div class="logo-cars">
-                        <a href="">
-                            <img class="logo-volvo" src="../img/assets/logo-Volvo.png" alt="volvo">
-
-                        </a>
-                    </div>
-                    <div class="logo-cars">
-                        <a href="">
-                            <img class="logo-mercedes" src="../img/assets/logo-Mercedes Benz.png" alt="mercedes">
-                        </a>
-                    </div>
-                </section>
                 <section class="container-recomend">
                     <div class="content-recommend">
                         <div class="content-top">
                             <img src="../img/recommend/icon.png" alt="icono">
                             <span class="top-recommend">64% Recommend</span>
                         </div>
-                        <img class="img-car" src="../img/recommend/image 12.png" alt="image-bmw">
+                        <img class="img-car-bmw-first" src="../img/recommend/image 12.png" alt="image-bmw">
                         <h2 class="name-car">BMW X1</h2>
                         <div class="content-bottom">
                             <div class="bottom-left">
@@ -103,7 +77,7 @@
                             <span class="top-recommend">94% Recommend</span>
                         </div>
 
-                        <img class="img-car" src="../img/recommend/image 13.png" alt="img-lamborgini">
+                        <img class="img-car-lamborgini" src="../img/recommend/image 13.png" alt="img-lamborgini">
                         <h2 class="name-car">Lamborghini Urus</h2>
                         <div class="content-bottom">
                             <div class="bottom-left">
@@ -122,7 +96,7 @@
                             <img src="../img/recommend/icon.png" alt="icon">
                             <span class="top-recommend">89% Recommend</span>
                         </div>
-                        <img class="img-car" src="../img/recommend/image 14.png" alt="img-volvo">
+                        <img class="img-car-volvo" src="../img/recommend/image 14.png" alt="img-volvo">
                         <h2 class="name-car">Volvo XC90</h2>
                         <div class="content-bottom">
                             <div class="bottom-left">
@@ -141,7 +115,7 @@
                             <img src="../img/recommend/icon.png" alt="icon">
                             <span class="top-recommend">56% Recommend</span>
                         </div>
-                        <img class="img-car" src="../img/recommend/image 15.png" alt="ing-jeep">
+                        <img class="img-car-jeep" src="../img/recommend/image 15.png" alt="ing-jeep">
                         <h2 class="name-car">Jeep Rubicon</h2>
                         <div class="content-bottom">
                             <div class="bottom-left">
@@ -160,7 +134,7 @@
                             <img src="../img/recommend/icon.png" alt="icon">
                             <span class="top-recommend">69% Recommend</span>
                         </div>
-                        <img class="img-car" src="../img/recommend/image 16.png" alt="img-mercedes">
+                        <img class="img-car-mercedes" src="../img/recommend/image 16.png" alt="img-mercedes">
                         <h2 class="name-car">Mercedes-Benz AMG G 63</h2>
                         <div class="content-bottom">
                             <div class="bottom-left">
@@ -179,7 +153,64 @@
                             <img src="../img/recommend/icon.png" alt="icon">
                             <span class="top-recommend">79% Recommend</span>
                         </div>
-                        <img class="img-car" src="../img/recommend/image 19.png" alt="img-porshe">
+                        <img class="img-car-porshe" src="../img/recommend/image 19.png" alt="img-porshe">
+                        <h2 class="name-car">Porsche 911 GT3 RS</h2>
+                        <div class="content-bottom">
+                            <div class="bottom-left">
+                                <img src="../img/recommend/flechas.png" alt="icono">
+                                <span>232K</span>
+                                <img src="../img/recommend/config.png" alt="icono">
+                                <img src="../img/recommend/rayo.png" alt="icono">
+                            </div>
+                            <div class="bottom-right">
+                                <span>$42/h</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-recommend">
+                        <div class="content-top">
+                            <img src="../img/recommend/icon.png" alt="icon">
+                            <span class="top-recommend">56% Recommend</span>
+                        </div>
+                        <img class="img-car-bmw" src="../img/recommend/image 41.png" alt="img-bmw">
+                        <h2 class="name-car">BMW M5</h2>
+                        <div class="content-bottom">
+                            <div class="bottom-left">
+                                <img src="../img/recommend/flechas.png" alt="icono">
+                                <span>95K</span>
+                                <img src="../img/recommend/config.png" alt="icono">
+                                <img src="../img/recommend/rayo.png" alt="icono">
+                            </div>
+                            <div class="bottom-right">
+                                <span>$35/h</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-recommend">
+                        <div class="content-top">
+                            <img src="../img/recommend/icon.png" alt="icon">
+                            <span class="top-recommend">99% Recommend</span>
+                        </div>
+                        <img class="img-car-lamborgini" src="../img/recommend/image 42.png" alt="img-lamborgini">
+                        <h2 class="name-car">Lamborghini Aventador</h2>
+                        <div class="content-bottom">
+                            <div class="bottom-left">
+                                <img src="../img/recommend/flechas.png" alt="icono">
+                                <span>740K</span>
+                                <img src="../img/recommend/config.png" alt="icono">
+                                <img src="../img/recommend/rayo.png" alt="icono">
+                            </div>
+                            <div class="bottom-right">
+                                <span>$12/h</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-recommend">
+                        <div class="content-top">
+                            <img src="../img/recommend/icon.png" alt="icon">
+                            <span class="top-recommend">79% Recommend</span>
+                        </div>
+                        <img class="img-car-mercedes-large" src="../img/recommend/image 43.png" alt="img-mercedes">
                         <h2 class="name-car">Porsche 911 GT3 RS</h2>
                         <div class="content-bottom">
                             <div class="bottom-left">
@@ -198,7 +229,6 @@
         </section>
 
     </div>
-    
 </body>
 
 </html>

@@ -46,8 +46,9 @@ body {
 }
 
 .header {
-    /* background-color: black; */
-    background-color: red;
+    background-color: black;
+
+    /* background-color: red */
     margin-top: 0;
     height: 12%;
     width: 100%;
@@ -458,4 +459,187 @@ a:hover {
 .content-img-details:hover .img-car{
  transform: scale(1.0) translateY(-5px);
   transition: transform 0.4s ease;
+}
+@media (max-width: 768px) {
+  /* Reorganiza la cabecera en columna */
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+    align-items: center;
+    margin: 0;
+  }
+  .logo{
+    margin: o;
+  }
+
+  .container-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search {
+    width: 90%;
+    margin: 10px auto;
+    position: relative;
+  }
+
+  .input {
+    width: 90%;
+    left: 30px;
+  }
+
+  .bi-search {
+    left: 10px;
+    top: 15px;
+  }
+
+  .info {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 10px;
+  }
+
+  .profile {
+    margin-right: 0;
+  }
+  /* Layout principal cambia a columna */
+  .principal {
+    flex-direction: column;
+  }
+
+  /* Sidebar ocupa ancho completo en móvil */
+  .sidebar {
+
+    height: auto !important;
+    min-height: auto !important;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-right: none;
+    border-bottom: 1px solid white;
+    padding: 10px 0;
+  }
+
+  .items-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .item {
+    width: auto;
+    margin: 0;
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+  /* Ajuste para contenido principal */
+  .body-page {
+    width: 100%;
+  }
+
+  .container-details {
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .content-img-details,
+  .content-details {
+    width: 100%;
+    height: auto;
+  }
+
+  .content-img-details img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .content-img-details h1 {
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .content-price {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .content-price h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .info-person {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-left: 0;
+  }
+
+  .ubication {
+    margin: 10px 20px;
+  }
+
+  .visit-profile {
+    position: static;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .message {
+    position: static;
+    text-align: center;
+  }
+
+  .content-details-cars img {
+    width: 100%;
+    height: auto;
+  }
+
+  .container-gallery {
+    height: auto;
+    padding: 0 10px;
+  }
+
+  .content-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .content-gallery img {
+    height: auto;
+  }
+
+  .next {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    gap: 10px;
+  }
+
+  .next a {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+  }
 }

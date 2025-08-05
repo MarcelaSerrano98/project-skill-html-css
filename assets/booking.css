@@ -46,8 +46,8 @@ body {
 }
 
 .header {
-    /* background-color: black; */
-    background-color: red;
+    background-color: black;
+    /* background-color: red; */
     margin-top: 0;
     height: 12%;
     width: 100%;
@@ -414,67 +414,155 @@ a:hover {
 
 /* Para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
   .container-body {
+    display: flex;
     flex-direction: column;
+    width: 100%;
+  }
+
+  .header {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+    align-items: center;
+    margin: 0;
+  }
+
+  .container-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin: 0;
+    width: 180px;
+    height: auto;
+  }
+
+  .search {
+    width: 90%;
+    margin: 10px auto;
+    position: relative;
+  }
+
+  .input {
+    width: 90%;
+    left: 35px;
+  }
+
+  .bi-search {
+    left: 10px;
+    top: 15px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+
+  .profile {
+    margin-right: 0;
+  }
+
+  .principal {
+    flex-direction: column;
+    width: 100%;
   }
 
   .sidebar {
+
+    height: auto !important;
+    min-height: auto !important;
     width: 100%;
-    height: auto;
-    position: relative;
-    display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     border-right: none;
     border-bottom: 1px solid white;
-    box-shadow: 0px 5px 30px rgba(255, 255, 255, 0.2);
     padding: 10px 0;
-  }
-
-  .sidebar-nav {
-    flex-direction: row;
-    gap: 20px;
-    height: auto;
   }
 
   .items-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
-    width: auto;
   }
 
   .item {
-    margin: 10px;
     width: auto;
-    height: auto;
-    font-size: 16px;
+    margin: 0;
+    font-size: 14px;
+    padding: 5px 10px;
   }
 
   .body-page {
     width: 100%;
   }
 
+  .container-recomend {
+    margin: 0;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
   .content-recommend {
-    margin: 10px;
+    position: relative;
+    padding-bottom: 100px; /* espacio para los elementos posicionados abajo */
+    min-height: 300px; /* asegura que no se recorten los textos */
   }
 
-  .search {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+  .content-recommend h2 {
+    position: absolute;
+    bottom: 70px;
+    left: 15px;
+    font-size: 18px;
+    color: black;
+    z-index: 1;
   }
 
-  .input {
-    width: 80%;
+  .content-bottom {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
   }
 
-  .info {
-    flex-wrap: wrap;
-    justify-content: center;
+  .img-car-bmw,
+  .img-car-lamborgini,
+  .img-car-volvo,
+  .img-car-porshe,
+  .img-car-mercedes,
+  .img-car-jeep,
+  .img-car-mercedes-large,
+  .img-car-bmw-first {
+    width: 100%;
+    height: auto;
+    min-width: unset;
+    margin-top: 70px;
+    z-index: 0;
   }
+
 }
 
 

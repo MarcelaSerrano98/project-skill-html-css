@@ -262,6 +262,12 @@ AQUÍ COMIENZAN LOS NUEVOS ESTILOS AÑADIDOS
     width: 100%;
     font-family: var(--booking-font-family);
 }
+.status-card:hover{
+    cursor: pointer;
+    background-color:rgba(169, 159, 159, 0.2) ;
+    box-shadow: 4px 5px 30px rgba(169, 159, 159, 0.5);
+
+}
 
 .booking-col-left { grid-area: left; display: flex; flex-direction: column; gap: 2rem; }
 .booking-col-right { grid-area: right; display: flex; flex-direction: column; gap: 2rem; }

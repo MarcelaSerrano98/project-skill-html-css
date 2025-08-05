@@ -77,12 +77,12 @@ body {
     margin-top: 25px;
 }
 
-.dashboard-fill {
+.settings-fill {
     background-color: white;
     border-radius: 10px;
 }
 
-.dashboard-fill a {
+.settings-fill a {
     color: black;
     font-weight: bold;
 }

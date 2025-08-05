@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/assets/service.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-body">
+
+        <header class="header">
+            <section class="container-header">
+                <div class="content-img">
+                    <img class="logo" src="../img/assets/logo-seyra.png" alt="logo-seyra" title="logo-seyra">
+                </div>
+                <form class="search" action="#" method="get">
+                    <i class="bi bi-search"></i>
+                    <input class="input" type="search" name="q" placeholder="Search or type">
+                </form>
+                <div class="info">
+                    <i class="bi bi-bell-fill"></i>
+                    <div class="profile">
+                        <img class="img-profile" src="../img/assets/profile.png" alt="profile">
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main class="principal">
+            <aside class="sidebar">
+                <nav class="sidebar-nav-top">
+                    <ul class="items-list">
+                        <li class="item"><img class="icons" src="../img/assets/dashboard icon.png"
+                                alt="icon-dahsboard"><a href="../pages/main.html">Dashboard</a>
+                        </li>
+                        <li class="item"><img class="icons" src="../img/assets/assets.png" alt="icon-assets"> <a
+                                href="../pages/car-detail-volvo.html">Assets</a></li>
+                        <li class="item"><img class="icons" src="../img/assets/booking.png" alt="icon-booking"><a
+                                href="../pages/booking.html">Booking</a></li>
+                        <li class="item"><img class="icons" src="../img/assets/sellcars.png" alt="icon-sellcars"><a
+                                href="">Sell Cars</a>
+                        </li>
+                        <li class="item service-fill"><img class="icons" src="../img/assets/services.png" alt="icon-services"><a
+                                href="../pages/service.html">Services</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="sidebar-nav-bottom">
+                    <ul class="items-list top-list">
+                        <li class="item"><img src="../img/assets/settings.png" alt="icon-setting" class="incons"><a
+                                href="">Settings</a>
+                        </li>
+                        <li class="item"><img src="../img/assets/log out.png" alt="icon-logout" class="icons"> <a
+                                href="../index.html">Log out</a></li>
+                    </ul>
+
+                </nav>
+            </aside>
+            <section class="body-page">    
+                        
+            <section class="container-recomend">
+                    
+                    <div class="booking-dashboard-grid">
+                        <div class="booking-col-left">
+                            <div class="booking-card service-station-card">
+                                <h2 class="booking-card-title">Service Station</h2>
+                                <div class="booking-bays-grid">
+                                    <div class="booking-bay">A1</div><div class="booking-bay">A2</div><div class="booking-bay">A3</div><div class="booking-bay booked">A4</div><div class="booking-bay">A5</div><div class="booking-bay">A6</div><div class="booking-bay">A7</div><div class="booking-bay">A8</div><div class="booking-bay">A9</div><div class="booking-bay booked">A10</div>
+                                    <div class="booking-bay booked">B1</div><div class="booking-bay">B2</div><div class="booking-bay">B3</div><div class="booking-bay">B4</div><div class="booking-bay">B5</div><div class="booking-bay">B6</div><div class="booking-bay current-station">B7</div><div class="booking-bay">B8</div><div class="booking-bay current-station">B9</div><div class="booking-bay">B10</div>
+                                </div>
+                                <div class="booking-legend">
+                                    <div class="booking-legend-item"><span class="booking-dot ready"></span> Ready</div>
+                                    <div class="booking-legend-item"><span class="booking-dot booked"></span> Booked</div>
+                                    <div class="booking-legend-item"><span class="booking-dot current-station"></span> Current Station</div>
+                                </div>
+                            </div>
+            
+                            <div class="booking-card your-order-card">
+                                 <h2 class="booking-card-title">Your Order</h2>
+                                 <div class="booking-order-details">
+                                    <div class="booking-service-time-container">
+                                        <div class="booking-service-time-circle">
+                                            <div class="booking-circle-inner-content">
+                                                <span>Service Time</span>
+                                                <strong>5, 2h</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="booking-service-list">
+                                        <li class="booking-service-item"><span class="booking-service-dot green"></span><span class="booking-service-name">Brake fluid change</span><span class="booking-service-price">$32</span></li>
+                                        <li class="booking-service-item"><span class="booking-service-dot red"></span><span class="booking-service-name">Diagnostics</span><span class="booking-service-price">$32</span></li>
+                                        <li class="booking-service-item"><span class="booking-service-dot purple"></span><span class="booking-service-name">External Washing</span><span class="booking-service-price">$10</span></li>
+                                    </ul>
+                                    <button class="booking-btn booking-btn-add">Add Services</button>
+                                    <button class="booking-btn booking-btn-pay">Pay $86</button>
+                                 </div>
+                            </div>
+                        </div>
+            
+                        <div class="booking-col-right">
+                            <div class="booking-card service-required-card">
+                                <h2 class="booking-card-title">Service Required</h2>
+                                <ul class="booking-required-list">
+                                    <li class="booking-required-item">
+                                        <div class="booking-item-icon-wrapper"><div class="booking-item-icon" style="background-color: #E3F2FD;">👤</div></div>
+                                        <div class="booking-item-details">
+                                            <span class="booking-item-name">Center Care</span>
+                                            <span class="booking-item-price">Price : $48</span>
+                                            <span class="booking-item-time">Processing : 1 hours</span>
+                                        </div>
+                                    </li>
+                                    <li class="booking-required-item">
+                                        <div class="booking-item-icon-wrapper"><div class="booking-item-icon" style="background-color: #F3E5F5;">⚙️</div></div>
+                                        <div class="booking-item-details">
+                                            <span class="booking-item-name">Diagnostics</span>
+                                            <span class="booking-item-price">Price : $78</span>
+                                            <span class="booking-item-time">Processing : 2 hours</span>
+                                        </div>
+                                    </li>
+                                    <li class="booking-required-item">
+                                        <div class="booking-item-icon-wrapper"><div class="booking-item-icon" style="background-color: #FFEBEE;">🧼</div></div>
+                                        <div class="booking-item-details">
+                                            <span class="booking-item-name">Inner Cleaning</span>
+                                            <span class="booking-item-price">Price : $78</span>
+                                            <span class="booking-item-time">Processing : 1 hours</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+            
+                            <div class="booking-card service-schedule-card">
+                                <h2 class="booking-card-title">Service Schedule</h2>
+                                <ul class="booking-schedule-list">
+                                    <li class="booking-schedule-item">
+                                        <div class="booking-schedule-radio active"></div>
+                                        <div class="booking-schedule-details">
+                                            <span class="booking-schedule-title">Upgrade your favorite car periodically</span>
+                                            <div class="booking-schedule-meta">
+                                                <span>Today, 10.00</span>
+                                                <span>Fix Price : $1,200</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="booking-schedule-item">
+                                        <div class="booking-schedule-radio"></div>
+                                        <div class="booking-schedule-details">
+                                            <span class="booking-schedule-title">Buy spare parts for suspension</span>
+                                            <div class="booking-schedule-meta">
+                                                <span>Today, 14.00</span>
+                                                <span>Fix Price : $1,400</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+            
+                        <div class="booking-bottom-row">
+                            <div class="booking-card status-card">
+                                <div class="booking-status-icon-placeholder">
+                                    <img src="/img/img_services/Ресурс-24.png" alt="">
+                                </div>
+                                <div class="booking-status-content">
+                                    <h3>Oil Level</h3>
+                                    <span>Engine</span>
+                                    <p>Don't Replace</p>
+                                </div>
+                                <div class="booking-status-bar-wrapper"><div class="booking-status-bar" style="width: 80%; background-color: #4CAF50;"></div></div>
+                            </div>
+                             <div class="booking-card status-card">
+                                <div class="booking-status-icon-placeholder">
+                                    <img src="/img/img_services/Frame-64-2.png" alt="">
+                                </div>
+                                <div class="booking-status-content">
+                                    <h3>Brake Pads</h3>
+                                    <span>Wheels</span>
+                                    <p>Still Good</p>
+                                </div>
+                                <div class="booking-status-bar-wrapper"><div class="booking-status-bar" style="width: 50%; background-color: #FFC107;"></div></div>
+                            </div>
+                             <div class="booking-card status-card">
+                                <div class="booking-status-icon-placeholder">
+                                    <img src="/img/img_services/00090.png" alt="">
+                                </div>
+                                <div class="booking-status-content">
+                                    <h3>Steering</h3>
+                                    <span>Drivetrain</span>
+                                    <p>Need Change</p>
+                                </div>
+                                <div class="booking-status-bar-wrapper"><div class="booking-status-bar" style="width: 20%; background-color: #F44336;"></div></div>
+                            </div>
+                             <div class="booking-card status-card">
+                                <div class="booking-status-icon-placeholder">
+                                    <img src="/img/img_services/Ресурс-24.png" alt="">
+                                </div>
+                                <div class="booking-status-content">
+                                    <h3>Oil Level</h3>
+                                    <span>Engine</span>
+                                    <p>Don't Replace</p>
+                                </div>
+                                <div class="booking-status-bar-wrapper"><div class="booking-status-bar" style="width: 80%; background-color: #4CAF50;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+            </main>
+        </section>
+    </div>
+</body>
+</html>

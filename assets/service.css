@@ -1,0 +1,584 @@
+:root {
+    --color-gray-900: #212529;
+    /* Muy oscuro - Jet Black */
+    --color-gray-800: #343a40;
+    /* Carbón - Charcoal Gray */
+    --color-gray-700: #495057;
+    /* Gris oscuro - Slate Gray */
+    --color-gray-600: #6c757d;
+    /* Gris acero - Steel Gray */
+    --color-gray-500: #adb5bd;
+    /* Gris medio - Light Gray */
+    --color-gray-400: #ced4da;
+    /* Gris claro - Cloud Gray */
+    --color-gray-300: #dee2e6;
+    /* Gris humo - Smoke Gray */
+    --color-gray-200: #e9ecef;
+    /* Gris neblina - Mist Gray */
+    --color-gray-100: #f8f9fa;
+    /* Casi blanco - Ghost White */
+}
+
+/* *{
+   
+    outline: 1px solid red;
+} */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* margin: 5px; */
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    /* overflow-y:hidden ; */
+    /* max-width: 1400px;  */
+}
+.container-body {
+    /* display: flex;
+    flex-direction: row; */
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    /* background-color: black; */
+    background-color: red;
+    margin-top: 0;
+    height: 12%;
+    width: 100%;
+    display: flex;
+    /* position: sticky; */
+    /* top: 0; */
+    /* border-bottom: 1px solid white; */
+    box-shadow: 0px 5px 30px rgba(169, 159, 159, 0.2);
+    /* position: absolute;
+    z-index: 2; */
+}
+
+.container-header {
+    background-color:black;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content-img {
+    /* background-color: antiquewhite; */
+    height: 80px;
+    margin-left: 10px;
+}
+
+.logo {
+    /* background-color: aqua; */
+    height: 100px;
+    width: 200px;
+    margin-left: 0px;
+    margin-bottom: 0;
+}
+
+.sidebar {
+    background-color: black;
+    /* background-color: antiquewhite; */
+    min-height: 100%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid white;
+    box-shadow: inset 0px 0px 30px rgba(255, 255, 255, 0.2);
+    
+}
+
+.items-list {
+    /* background-color: yellow; */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    list-style-type: none;
+    
+    
+}
+
+.item {
+    /* background-color: #ced4da; */
+    width: 70%;
+    font-size: 18px;
+    box-shadow: none;
+    margin-top: 25px;
+}
+.service-fill{
+    background-color: white;
+    border-radius:10px;
+}
+.service-fill a{
+    color: black;
+    font-weight: bold;
+}
+
+
+a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: var(--color-gray-600);
+    font-size: 20px;
+}
+
+.item:hover {
+
+    height: 40px;
+    font-weight: bold;
+    box-shadow: 4px 5px 30px rgba(169, 159, 159, 0.2);
+    /* border: 0.1px solid white; */
+    cursor: pointer;
+}
+
+.body-page {
+    /* background-color: aquamarine; */
+    width: 81%;
+}
+
+.principal{
+    display: flex;
+    flex-direction: row;
+}
+
+.search {
+    background-color: white;
+
+    position: relative;
+    height: 50px;
+    width: 350px;
+    /* background-color: antiquewhite; */
+    margin-top: 15px;
+    margin-left: 20PX;
+    border-radius: 20px;
+}
+
+.bi-search {
+
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    top: 15px
+}
+
+.input {
+    z-index: 1;
+    position: absolute;
+    height: 40px;
+    width: 300px;
+    top: 5px;
+    left: 30px;
+    background-color: white;
+    border: none;
+    outline: none;
+}
+
+.bi-bell-fill {
+    /* background-color: darkblue; */
+    color: white;
+    margin: auto;
+}
+
+.bi-bell-fill:hover {
+    cursor: pointer;
+    color: yellow;
+}
+
+
+.info {
+    /* background-color: aqua; */
+    width: 200px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.profile {
+    background-color: var(--color-gray-300);
+    width: 50px;
+    margin-right: 15px;
+    border-radius: 50px;
+}
+
+.profile img {
+    /* background-color: yellowgreen; */
+    margin-left: 1px;
+    width: 50px;
+    height: 50px;
+}
+
+/* ============================================================
+AQUÍ COMIENZAN LOS NUEVOS ESTILOS AÑADIDOS
+============================================================
+*/
+
+
+/* --- INICIO DE ESTILOS PARA EL PANEL DE BOOKING --- */
+
+/* --- Variables de color para los nuevos componentes --- */
+:root {
+    --booking-bg-color: #F8F9FD;
+    --booking-card-bg-color: #FFFFFF;
+    --booking-primary-font-color: #333;
+    --booking-secondary-font-color: #888;
+    --booking-purple-primary: #8C52FF;
+    --booking-purple-light: #F0E9FF;
+    --booking-red-booked: #FFA1A1;
+    --booking-blue-current: #4D4CAC; 
+    --booking-green-dot: #4CAF50;
+    --booking-red-dot: #F44336;
+    --booking-purple-dot: #9C27B0;
+    --booking-border-color: #ECECEC;
+    --booking-font-family: 'Poppins', sans-serif;
+}
+
+/* Modificación a tu contenedor para que el nuevo grid funcione bien dentro */
+.container-recomend {
+    display: block; /* Anulamos tu grid para usar el nuestro */
+    padding: 2rem;
+    gap: 0; /* Reseteamos el gap */
+}
+
+/* --- Layout Principal del Panel de Booking --- */
+.booking-dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "left right"
+        "bottom bottom";
+    gap: 2rem;
+    width: 100%;
+    font-family: var(--booking-font-family);
+}
+
+.booking-col-left { grid-area: left; display: flex; flex-direction: column; gap: 2rem; }
+.booking-col-right { grid-area: right; display: flex; flex-direction: column; gap: 2rem; }
+.booking-bottom-row { grid-area: bottom; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
+
+
+/* --- Estilos de Tarjeta Base --- */
+.booking-card {
+    background-color: var(--booking-card-bg-color);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    color: var(--booking-primary-font-color);
+}
+
+.booking-card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* --- Componentes Específicos --- */
+
+/* Estación de Servicio */
+.booking-bays-grid { 
+    display: grid; 
+    grid-template-columns: 
+    repeat(10, 1fr); 
+    gap: 10px; 
+    margin-bottom: 20px; 
+}
+
+.booking-bay { 
+    background-color: var(--booking-card-bg-color); 
+    border: 1px solid var(--booking-border-color); 
+    border-radius: 8px; 
+    aspect-ratio: 1 / 1; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-weight: 600; 
+    font-size: 0.9rem; 
+    cursor: pointer; 
+    transition: transform 0.2s; 
+}
+.booking-bay:hover { 
+    transform: scale(1.05); 
+}
+.booking-bay.booked { 
+    background-color: var(--booking-red-booked); 
+    color: white; 
+    border-color: 
+    var(--booking-red-booked); 
+}
+.booking-bay.current-station { 
+    background-color: var(--booking-blue-current); 
+    color: white; 
+    border-color: var(--booking-blue-current); 
+}
+.booking-legend { 
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    font-size: 0.8rem; 
+    color: var(--booking-secondary-font-color); 
+}
+.booking-legend-item { 
+    display: flex; 
+    align-items: 
+    center; gap: 8px; 
+}
+.booking-dot { width: 12px; 
+    height: 12px; 
+    border-radius: 50%; 
+}
+.booking-dot.ready { 
+    background-color: #fff;
+    border: 1px solid var(--booking-border-color); 
+}
+.booking-dot.booked { 
+    background-color: var(--booking-red-booked); 
+}
+.booking-dot.current-station { 
+    background-color: var(--booking-blue-current); 
+}
+
+/* Tu Pedido */
+.booking-order-details { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px; 
+}
+.booking-service-time-container { 
+    display: flex; 
+    justify-content: center; 
+    margin: 10px 0; 
+}
+.booking-service-time-circle { 
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    display: grid; 
+    place-items: center; 
+    background: conic-gradient(var(--booking-red-booked) 0deg 190deg, var(--booking-green-dot) 190deg 360deg); 
+    padding: 10px; 
+}
+.booking-circle-inner-content { 
+    width: 100%; 
+    height: 100%; 
+    background-color: var(--booking-card-bg-color); 
+    border-radius: 50%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 5px; }
+
+.booking-circle-inner-content span { 
+    color: var(--booking-secondary-font-color); 
+    font-size: 0.9rem; 
+}
+.booking-circle-inner-content strong { 
+    font-size: 1.5rem; 
+    color: var(--booking-primary-font-color); 
+}
+.booking-service-list { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px; 
+}
+.booking-service-item { 
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+}
+.booking-service-dot { 
+    width: 12px; 
+    height: 12px; 
+    border-radius: 50%; 
+    flex-shrink: 0; 
+}
+.booking-service-dot.green { 
+    background-color: var(--booking-green-dot); 
+}
+.booking-service-dot.red { 
+    background-color: var(--booking-red-dot); 
+}
+.booking-service-dot.purple { 
+    background-color: var(--booking-purple-dot); 
+}
+.booking-service-name { 
+    flex-grow: 1; 
+    font-weight: 500; 
+}
+.booking-service-price { 
+    font-weight: 600; 
+}
+.booking-btn { 
+    width: 100%; 
+    padding: 15px; 
+    border-radius: 12px; 
+    border: none; 
+    font-size: 1rem; 
+    font-weight: 600; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+.booking-btn-add { 
+    background-color: var(--booking-purple-light); 
+    color: var(--booking-purple-primary); 
+}
+.booking-btn-add:hover { 
+    background-color: #e0d4ff; 
+}
+.booking-btn-pay { 
+    background-color: var(--booking-purple-primary); 
+    color: white; 
+}
+.booking-btn-pay:hover { 
+    background-color: #7a3fe6; 
+}
+
+/* Servicio Requerido */
+.booking-required-list { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    position: relative; 
+}
+.booking-required-item { 
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+    position: relative; 
+}
+.booking-required-item:not(:last-child) { 
+    margin-bottom: 25px; 
+}
+.booking-required-item:not(:last-child)::before { 
+    content: ''; 
+    position: absolute; 
+    left: 24px; 
+    top: 50px; 
+    height: calc(100% - 25px); 
+    border-left: 2px dashed var(--booking-border-color); 
+}
+.booking-item-icon-wrapper { 
+    z-index: 1; 
+    background-color: #fff; 
+}
+.booking-item-icon { 
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    display: grid; 
+    place-items: center; 
+    font-size: 1.5rem; 
+}
+.booking-item-details { 
+    display: flex; 
+    flex-direction: column; 
+    font-size: 0.9rem; 
+}
+.booking-item-name { 
+    font-weight: 600; 
+    font-size: 1rem; 
+}
+.booking-item-price, .booking-item-time { 
+    color: var(--booking-secondary-font-color); }
+
+/* Horario de Servicio */
+.booking-schedule-list { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px; 
+}
+.booking-schedule-item { 
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+}
+.booking-schedule-radio { 
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%; 
+    border: 2px solid var(--booking-border-color); 
+    flex-shrink: 0; 
+}
+.booking-schedule-radio.active { 
+    background-color: var(--booking-purple-primary); 
+    border-color: var(--booking-purple-primary); 
+}
+.booking-schedule-details { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 4px; 
+    width: 100%;
+}
+.booking-schedule-title { 
+    font-weight: 600; 
+}
+.booking-schedule-meta { 
+    display: flex; 
+    justify-content: space-between; 
+    font-size: 0.8rem; 
+    color: var(--booking-secondary-font-color); 
+}
+
+/* Tarjetas de Estado (Fila Inferior) */
+.booking-card.status-card { display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+}
+.booking-status-icon-placeholder { 
+    width: 50px; 
+    height: 50px; 
+    background-color: #F0F0F0; 
+    border-radius: 12px; 
+}
+.booking-status-content h3 { 
+    margin: 0; 
+    font-size: 1rem; 
+}
+.booking-status-content span { 
+    font-size: 0.8rem; 
+    color: var(--booking-secondary-font-color); 
+}
+.booking-status-content p { 
+    font-weight: 600; 
+    margin: 5px 0 0; 
+}
+.booking-status-bar-wrapper { 
+    width: 100%; 
+    height: 6px; 
+    background-color: #F0F0F0; 
+    border-radius: 3px; 
+    overflow: hidden; 
+}
+.booking-status-bar { 
+    height: 100%; 
+    border-radius: 3px; 
+}
+
+/* Ajustes Responsivos */
+@media (max-width: 650px) {
+    .booking-dashboard-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "left"
+            "right"
+            "bottom";
+    }
+}

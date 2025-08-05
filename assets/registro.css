@@ -140,6 +140,8 @@ body {
     transition: background-color .3s ease;
 
 }
+
+
 .form label input::placeholder{
     color: #e9ecef;
 }
@@ -158,10 +160,24 @@ body {
     transition: background-color .3s ease;
 }
 
-
 .button:hover{
     cursor: pointer;
     border: none;
     background-color: #6c757d;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
 }
+
+.button-bottom{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.button-bottom a{
+    text-decoration: none;
+    color: #e9ecef;
+}
+

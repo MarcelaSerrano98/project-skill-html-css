@@ -46,8 +46,8 @@ body {
 }
 
 .header {
-    /* background-color: black; */
-    background-color: red;
+    background-color: black;
+    /* background-color: red; */
     margin-top: 0;
     height: 12%;
     width: 100%;
@@ -573,7 +573,91 @@ AQUÍ COMIENZAN LOS NUEVOS ESTILOS AÑADIDOS
 }
 
 /* Ajustes Responsivos */
-@media (max-width: 800px) {
+@media (max-width: 768px) {
+    .header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+    align-items: center;
+    margin: 0;
+  }
+  .logo{
+    margin: o;
+  }
+
+  .container-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search {
+    width: 90%;
+    margin: 10px auto;
+    position: relative;
+  }
+
+  .input {
+    width: 90%;
+    left: 30px;
+  }
+
+  .bi-search {
+    left: 10px;
+    top: 15px;
+  }
+
+  .info {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 10px;
+  }
+
+  .profile {
+    margin-right: 0;
+  }
+  /* Layout principal cambia a columna */
+  .principal {
+    flex-direction: column;
+  }
+
+  /* Sidebar ocupa ancho completo en móvil */
+  .sidebar {
+
+    height: auto !important;
+    min-height: auto !important;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-right: none;
+    border-bottom: 1px solid white;
+    padding: 10px 0;
+  }
+
+  .items-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .item {
+    width: auto;
+    margin: 0;
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+  /* Ajuste para contenido principal */
+  .body-page {
+    width: 100%;
+  }
+
     .booking-dashboard-grid {
         grid-template-columns: 1fr;
         grid-template-areas:

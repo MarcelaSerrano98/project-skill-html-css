@@ -32,27 +32,44 @@ body {
 
 body {
     /* margin: 5px; */
-    overflow-x: hidden;
     background-color: white;
     height: 100%;
     width: 100%;
+    /* overflow-y:hidden ; */
     /* max-width: 1400px;  */
 }
-
 .container-body {
+    /* display: flex;
+    flex-direction: row; */
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    /* background-color: black; */
+    background-color: red;
+    margin-top: 0;
+    height: 12%;
+    width: 100%;
+    display: flex;
+    /* position: sticky;
+    top: 0; */
+    /* border-bottom: 1px solid white; */
+    box-shadow: 0px 5px 30px rgba(169, 159, 159, 0.2);
+}
+
+.container-header {
+    background-color:black;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    min-height: 100%;
+    justify-content: space-between;
 }
 
 .content-img {
     /* background-color: antiquewhite; */
-    margin-top: 0;
     height: 80px;
     margin-left: 10px;
-    /* background-color: yellow; */
-
 }
 
 .logo {
@@ -60,45 +77,49 @@ body {
     height: 100px;
     width: 200px;
     margin-left: 0px;
+    margin-bottom: 0;
 }
 
 .sidebar {
     background-color: black;
     /* background-color: antiquewhite; */
-    height: 100vh;
-    position: sticky;
-    /* position: fixed;
-    left: 0; */
-    top: 0;
-    width: 300px;
-    border-right: 1px solid white;
-    box-shadow: inset 0px 10px 30px rgba(255, 255, 255, 0.2);
-}
-
-.sidebar-nav {
-    background-color: black;
-    /* height: 80%; */
-    height: 100vh;
+    min-height: 100%;
+    width: 20%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-right: 1px solid white;
+    box-shadow: inset 0px 0px 30px rgba(255, 255, 255, 0.2);
+    
 }
 
 .items-list {
     /* background-color: yellow; */
+    /* width: 60%;
+    height: 80%; */
+    margin-top: 30px;
+    margin-bottom: 30px;
     list-style-type: none;
-    width: 203px;
-    margin: 30px 0px 10px 10px;
+    
+    
 }
 
 .item {
     /* background-color: #ced4da; */
+    width: 60%;
     font-size: 18px;
-    height: 30px;
-    width: 130px;
     box-shadow: none;
-    margin-top: 20px;
+    margin-top: 25px;
 }
+.assets-fill{
+    background-color: white;
+    border-radius:10px;
+}
+.assets-fill a{
+    color: black;
+    font-weight: bold;
+}
+
 
 a {
     margin-left: 10px;
@@ -122,38 +143,12 @@ a:hover {
 
 .body-page {
     /* background-color: aquamarine; */
-    width: 100%;
+    width: 80%;
 }
 
-.header {
-    background-color: black;
-    margin-top: 0;
-    height: 11%;
-    display: flex;
-    border-bottom: 1px solid white;
-    box-shadow: 0px 5px 30px rgba(169, 159, 159, 0.2);
-}
-
-.container-header {
-    /* background-color:black; */
-    width: 100%;
+.principal{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-}
-.assets-fill {
-    background-color: white;
-    width: 205px;
-    border-radius: 5px;
-    box-shadow: 0px 3px 10px rgba(169, 159, 159, 0.5);
-}
-.assets-fill a{
-    color: black;
-}
-
-.assets-fill a:hover {
-    color: var(--color-gray-800);
-
 }
 
 .search {
@@ -200,7 +195,7 @@ a:hover {
 }
 
 .info {
-    /* background-color: aqua; */
+    /* background-color: red; */
     width: 200px;
     height: 50px;
     display: flex;
@@ -223,16 +218,11 @@ a:hover {
     height: 50px;
 }
 
-.principal {
-    /* background-color: aqua; */
-    height: 98%;
-}
-
 .container-assets {
     /* background-color: blue; */
     width: 100%;
     height: 100%;
-    margin: 5px;
+    /* margin: 5px; */
 
 }
 
@@ -244,20 +234,22 @@ a:hover {
     flex-direction: row;
     gap: 10px;
     padding-top: 10px;
+    padding-bottom: 10px   ;
 }
 
 .content-img-details {
     /* background-color: gray; */
     width: 50%;
-    height: 100%;
+    min-height: 100%;
 }
 
 .content-img-details h1 {
     /* background-color: aqua; */
-    width: 80%;
+    width: 100%;
     height: 10%;
-    margin: 10px;
-    margin-left: 40px;
+    margin: 0px;
+    padding-left: 8%;
+    /* margin-left: 40px; */
     font-size: 30px;
 
 
@@ -265,9 +257,8 @@ a:hover {
 
 .content-img-details img {
     /* background-color: aquamarine; */
-    width: 80%;
-    height: 85%;
-    /* margin: 10px; */
+    width: 85%;
+    height: 90%;
     margin-left: 40px;
 
 }
@@ -283,17 +274,18 @@ a:hover {
 }
 
 .content-price {
-    /* background-color: blueviolet; */
-    height: 10%;
+    /* background-color: blueviolet;    */
+    height: 40px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* margin: 10px; */
+    /* margin-top: 10px; */
 }
 
 .content-price h2 {
     /* background-color: aqua; */
-    height: 100%;
+    /* height: 100%; */
     font-size: 30px;
     margin-top: 5px;
 }
@@ -301,15 +293,16 @@ a:hover {
 .content-details-person {
     background-color: rgba(241, 235, 235, 0.6);
     border-radius: 10px;
+    margin-top: 0;
+    height: 50%;
     width: 100%;
-    height: 40%;
     box-shadow: 0px 0px 50px rgba(159, 155, 155, 0.6);
 }
 
 .content-details-cars {
     /* background-color: green; */
     width: 100%;
-    height: 40%;
+    height: 20%;
     padding-top: 20px;
     /* margin-left: 40px; */
 }
@@ -321,29 +314,31 @@ a:hover {
     /* background-color:   tomato; */
     /* padding-top: 20px; */
      /* padding-inline: 40px;  */
-    height: 45%;
+    height: 43%;
     width: 100%;
     display: flex;
     box-sizing: border-box;
-
 }
-/* .container-gallery:hover{
-    background-color: black;
-} */
-
 
 .content-gallery {
     /* background-color: yellow; */
-     max-width: 1200px; 
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 100%;
+     /* max-width: 1200px;  */
+    margin: 10px auto;
+    padding: 20px 40px 20px 30px;
+    width: 100%;
+    height: 100%;
     box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
 
+}
+.content-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Recorta o ajusta la imagen para cubrir bien el espacio */
+  display: block;
 }
 .content-gallery img:hover{
     box-shadow: 0px 2px 50px rgba(159, 155, 155, 0.9);
@@ -354,7 +349,7 @@ a:hover {
 .person {
     /* background-color: aqua; */
     width: 100%;
-    height: 55%;
+    height: 60%;
 }
 
 .info-person img {
@@ -396,7 +391,8 @@ a:hover {
 .contact {
     background-color: var(--color-gray-600);
     /* width: 100%; */
-    height: 38%;
+    height: 40%;
+    font-weight: bold;
     display: flex;
     flex-direction: row;
     border-bottom-left-radius: 10px;

@@ -1,0 +1,611 @@
+:root {
+    --color-gray-900: #212529;
+    /* Muy oscuro - Jet Black */
+    --color-gray-800: #343a40;
+    /* Carbón - Charcoal Gray */
+    --color-gray-700: #495057;
+    /* Gris oscuro - Slate Gray */
+    --color-gray-600: #6c757d;
+    /* Gris acero - Steel Gray */
+    --color-gray-500: #adb5bd;
+    /* Gris medio - Light Gray */
+    --color-gray-400: #ced4da;
+    /* Gris claro - Cloud Gray */
+    --color-gray-300: #dee2e6;
+    /* Gris humo - Smoke Gray */
+    --color-gray-200: #e9ecef;
+    /* Gris neblina - Mist Gray */
+    --color-gray-100: #f8f9fa;
+    /* Casi blanco - Ghost White */
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.container-body {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    background-color: red;
+    margin-top: 0;
+    height: 12%;
+    width: 100%;
+    display: flex;
+    box-shadow: 0px 5px 30px rgba(169, 159, 159, 0.2);
+
+}
+
+.container-header {
+    background-color:black;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content-img {
+    height: 80px;
+    margin-left: 10px;
+}
+
+.logo {
+    height: 100px;
+    width: 200px;
+    margin-left: 0px;
+    margin-bottom: 0;
+}
+
+.sidebar {
+    background-color: black;
+    min-height: 100%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid white;
+    box-shadow: inset 0px 0px 30px rgba(255, 255, 255, 0.2);
+    
+}
+
+.items-list {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    list-style-type: none;
+    
+    
+}
+
+.item {
+    width: 70%;
+    font-size: 18px;
+    box-shadow: none;
+    margin-top: 25px;
+}
+.booking-fill{
+    background-color: white;
+    border-radius:10px;
+}
+.booking-fill a{
+    color: black;
+    font-weight: bold;
+}
+
+
+a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: var(--color-gray-600);
+    font-size: 20px;
+}
+
+.item:hover {
+
+    height: 40px;
+    font-weight: bold;
+    box-shadow: 4px 5px 30px rgba(169, 159, 159, 0.2);
+    cursor: pointer;
+}
+
+.body-page {
+    width: 81%;
+}
+
+.principal{
+    display: flex;
+    flex-direction: row;
+}
+
+.search {
+    background-color: white;
+    position: relative;
+    height: 50px;
+    width: 350px;
+    margin-top: 15px;
+    margin-left: 20PX;
+    border-radius: 20px;
+}
+
+.bi-search {
+
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    top: 15px
+}
+
+.input {
+    z-index: 1;
+    position: absolute;
+    height: 40px;
+    width: 300px;
+    top: 5px;
+    left: 30px;
+    background-color: white;
+    border: none;
+    outline: none;
+}
+
+.bi-bell-fill {
+    /* background-color: darkblue; */
+    color: white;
+    margin: auto;
+}
+
+.bi-bell-fill:hover {
+    cursor: pointer;
+    color: yellow;
+}
+
+
+.info {
+    /* background-color: aqua; */
+    width: 200px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.profile {
+    background-color: var(--color-gray-300);
+    width: 50px;
+    margin-right: 15px;
+    border-radius: 50px;
+}
+
+.profile img {
+    /* background-color: yellowgreen; */
+    margin-left: 1px;
+    width: 50px;
+    height: 50px;
+}
+
+/* --- ESTILOS PARA LA SECCIÓN PRINCIPAL DE LA PÁGINA --- */
+.body-page {
+    width: 85%;     
+    background-color: #F8F9FD;
+    overflow-y: auto;   
+}
+
+.body-page-content {
+    padding: 2rem;
+}
+
+
+   /* NUEVOS ESTILOS PARA LA SECCIÓN "SELL CARS" */
+
+
+:root {
+    --bg-color: #F8F9FD;
+    --card-bg-color: #FFFFFF;
+    --text-primary: #333;
+    --text-secondary: #8A92A6;
+    --primary-purple: #815FF5;
+    --primary-red: #E63535;
+    --primary-blue: #5499FF;
+    --primary-green: #28a745;
+    --border-color: #E9E9E9;
+}
+
+.main-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+}
+
+/* SECCIÓN SUPERIOR: COCHE E HISTORIAL */
+.top-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.car-showcase-card, .tracking-history-card {
+    background-color: var(--card-bg-color);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.car-showcase-card h2, .tracking-history-card h2, .offers-section h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.car-image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+}
+
+.car-shadow-ellipse {
+    position: absolute;
+    width: 80%;
+    height: 150px;
+    background: radial-gradient(ellipse, rgba(200, 215, 255, 0.7) 0%, rgba(255,255,255,0) 70%);
+    bottom: 0;
+    z-index: 1;
+}
+
+.car-image-container img {
+    max-width: 90%;
+    position: relative;
+    z-index: 2;
+}
+
+
+.tracking-history-card {
+    border: 2px dashed #D9CBFF;
+}
+
+.chart-container {
+    display: flex;
+    height: 220px;
+}
+
+.y-axis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    padding-right: 1rem;
+}
+
+.bars-area {
+    width: 100%;
+    border-left: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 0 0.5rem;
+}
+
+.bar-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    height: 100%;
+    justify-content: flex-end;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.bar {
+    width: 15px;
+    background-color: #F1EDFF;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+.bar.active {
+    background-color: var(--primary-red);
+    position: relative;
+}
+.tooltip {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--text-primary);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+}
+.tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 4px;
+    border-style: solid;
+    border-color: var(--text-primary) transparent transparent transparent;
+}
+
+
+.offers-section {
+    margin-top: 2rem;
+}
+.offers-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.filters .filter-btn {
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 0.75rem 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.filters .filter-btn i {
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.offer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.offer-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--card-bg-color);
+    border-radius: 15px;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.offer-details h3 { 
+    margin: 0 0 0.25rem; 
+    font-size: 1.25rem; 
+}
+.offer-details .price { 
+    font-size: 1.2rem; 
+    font-weight: 600; 
+    color: var(--primary-red); 
+    margin: 0; 
+}
+.offer-details .market-average { 
+    font-size: 0.8rem; 
+    color: var(--text-secondary); 
+    margin: 0.25rem 0 1rem; 
+}
+.arrow-btn { background-color: var(--primary-red); 
+    color: white; 
+    border: none; 
+    border-radius: 8px; 
+    width: 40px; 
+    height: 40px; 
+    font-size: 1.2rem; 
+    cursor: pointer; 
+}
+
+/* Gráficas circulares */
+.impression-share, .spend-circle { 
+    text-align: center; 
+}
+.impression-share p { 
+    margin-top: 0.75rem; 
+    font-weight: 500; 
+}
+
+.progress-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: conic-gradient(var(--color) calc(var(--percentage) * 1%), var(--border-color) 0);
+    position: relative;
+    margin: 0 auto;
+}
+.progress-circle .inner-circle {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: var(--card-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inner-circle strong { font-size: 1.5rem; }
+.inner-circle span { font-size: 0.75rem; color: var(--text-secondary); }
+
+.multicolor-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: conic-gradient(from 180deg, #815FF5 0% 35%, #F4AB55 35% 65%, #5499FF 65% 100%);
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.multicolor-circle span {
+    width: 80px;
+    height: 80px;
+    background-color: var(--card-bg-color);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Items de estadísticas */
+.stat-item { text-align: center; }
+.stat-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 auto 0.5rem;
+}
+
+.stat-item p { 
+    font-weight: 600; 
+    font-size: 1.2rem; margin: 0; 
+}
+.stat-item span { 
+    font-size: 0.8rem; 
+    color: var(--text-secondary); 
+}
+
+
+/* responsive mode */
+/* @media (max-width: 1200px) {
+    .top-section {
+        grid-template-columns: 1fr;
+    }
+    .offer-card {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: center;
+    }
+} */
+/* 
+ @media (max-width: 800px) {
+    .principal {
+      flex-direction: column;
+    }
+
+  .sidebar {
+
+    height: auto !important;
+    min-height: auto !important;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-right: none;
+    border-bottom: 1px solid white;
+    padding: 10px 0;
+}
+
+    .body-page {
+        width: 100%;
+    }
+    .offers-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .filters {
+        width: 100%;
+        display: flex;
+    }
+    .filters .filter-btn {
+        flex-grow: 1;
+        margin: 0;
+    }
+    .filters .filter-btn:first-child {
+        margin-right: 1rem;
+    }
+}
+
+  
+     */
+
+@media (max-width: 800px) {
+    .principal {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-right: none;
+        border-bottom: 1px solid white;
+        padding: 10px 0;
+    }
+
+    .items-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .item {
+        flex: 1 1 calc(100% / 4);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        white-space: nowrap;
+        text-align: center;
+        min-width: 60px;
+    }
+
+    .item a {
+        color: white;
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item a:hover {
+        color: var(--color-gray-300);
+        font-size: 13px;
+    }
+
+    .booking-fill {
+        border-radius: 10px;
+        padding: 4px 8px;
+    }
+}

@@ -573,7 +573,7 @@ AQUÍ COMIENZAN LOS NUEVOS ESTILOS AÑADIDOS
 }
 
 /* Ajustes Responsivos */
-@media (max-width: 650px) {
+@media (max-width: 800px) {
     .booking-dashboard-grid {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -581,4 +581,9 @@ AQUÍ COMIENZAN LOS NUEVOS ESTILOS AÑADIDOS
             "right"
             "bottom";
     }
+
+    .items-list{
+        padding-inline-start: 10px;
+    }
+
 }

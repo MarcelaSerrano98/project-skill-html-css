@@ -181,3 +181,37 @@ body {
     color: #e9ecef;
 }
 
+
+/* Responsive mode */
+
+@media screen and (max-width: 768px) {
+
+  
+  .container-form {
+    flex-direction: column; 
+    height: auto;           
+    margin: 20px;           
+    width: 90%;             
+    max-width: 450px;       
+  }
+
+
+  .container-info {
+    width: 100%; 
+    padding: 25px 20px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 20px; 
+  }
+
+
+  .container-register {
+    width: 100%; 
+    padding: 25px 20px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 20px; 
+  }
+
+  html {
+    font-size: 14px;
+  }
+}

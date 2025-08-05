@@ -260,7 +260,21 @@ a:hover {
     width: 85%;
     height: 90%;
     margin-left: 40px;
+     /* animation: shake 0.5s;
+  animation-iteration-count:infinite; */
+  animation: pulse 1.2s ease-in-out infinite;
 
+}
+/* @keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+} */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.05); }
 }
 
 .content-details {
@@ -442,6 +456,6 @@ a:hover {
 
 }
 .content-img-details:hover .img-car{
- transform: scale(1.1) translateY(-5px);
+ transform: scale(1.0) translateY(-5px);
   transition: transform 0.4s ease;
 }

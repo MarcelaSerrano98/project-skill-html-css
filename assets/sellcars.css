@@ -275,6 +275,13 @@ a:hover {
     max-width: 90%;
     position: relative;
     z-index: 2;
+  animation: pulse 1.2s ease-in-out infinite;
+
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.05); }
 }
 
 
@@ -418,6 +425,10 @@ a:hover {
     height: 40px; 
     font-size: 1.2rem; 
     cursor: pointer; 
+}
+.arrow-btn:hover{
+    background-color: #5499FF;
+    cursor: pointer;
 }
 
 /* Gráficas circulares */

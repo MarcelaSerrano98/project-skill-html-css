@@ -406,3 +406,99 @@ a:hover {
   transform: scale(1.1) translateY(-5px);
   transition: transform 0.4s ease;
 }
+
+/* === RESPONSIVE DESIGN === */
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .container-body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-right: none;
+    border-bottom: 1px solid white;
+    box-shadow: 0px 5px 30px rgba(255, 255, 255, 0.2);
+    padding: 10px 0;
+  }
+
+  .sidebar-nav {
+    flex-direction: row;
+    gap: 20px;
+    height: auto;
+  }
+
+  .items-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+
+  .item {
+    margin: 10px;
+    width: auto;
+    height: auto;
+    font-size: 16px;
+  }
+
+  .body-page {
+    width: 100%;
+  }
+
+  .content-recommend {
+    margin: 10px;
+  }
+
+  .search {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .input {
+    width: 80%;
+  }
+
+  .info {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
+/* Para pantallas grandes (más de 1600px) */
+@media (min-width: 1600px) {
+  .sidebar {
+    width: 220px;
+  }
+
+  .item {
+    font-size: 20px;
+  }
+
+  .content-recommend {
+    min-height: 300px;
+  }
+
+  .img-car-bmw,
+  .img-car-lamborgini,
+  .img-car-volvo,
+  .img-car-porshe,
+  .img-car-mercedes,
+  .img-car-jeep,
+  .img-car-mercedes-large,
+  .img-car-bmw-first {
+    min-width: 300px;
+    min-height: 130px;
+  }
+}
+

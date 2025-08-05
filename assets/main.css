@@ -256,10 +256,10 @@ a:hover {
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     min-height: 100%;
-    padding: 20px;
+    /* padding: 20px; */
     margin: auto;
     margin-top: 80px;
-    padding-left: 150px
+    padding-left: 50px
 }
 
 

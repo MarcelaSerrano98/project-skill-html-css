@@ -198,7 +198,7 @@ a:hover {
     height: 50px;
 }
 
-/* --- ESTILOS PARA LA SECCIÓN PRINCIPAL DE LA PÁGINA --- */
+
 .body-page {
     width: 85%;     
     background-color: #F8F9FD;
@@ -210,7 +210,7 @@ a:hover {
 }
 
 
-   /* NUEVOS ESTILOS PARA LA SECCIÓN "SELL CARS" */
+   
 
 
 :root {
@@ -232,7 +232,7 @@ a:hover {
     color: var(--text-primary);
 }
 
-/* SECCIÓN SUPERIOR: COCHE E HISTORIAL */
+
 .top-section {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -509,7 +509,7 @@ a:hover {
 
 
 /* responsive mode */
-/* @media (max-width: 1200px) {
+ /* @media (max-width: 1200px) {
     .top-section {
         grid-template-columns: 1fr;
     }
@@ -518,7 +518,7 @@ a:hover {
         gap: 1.5rem;
         justify-content: center;
     }
-} */
+}  */
 /* 
  @media (max-width: 800px) {
     .principal {

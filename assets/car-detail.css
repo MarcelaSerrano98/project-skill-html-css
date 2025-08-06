@@ -31,31 +31,21 @@ body {
 }
 
 body {
-    /* margin: 5px; */
     background-color: white;
     height: 100%;
     width: 100%;
-    /* overflow-y:hidden ; */
-    /* max-width: 1400px;  */
 }
 .container-body {
-    /* display: flex;
-    flex-direction: row; */
     width: 100%;
     height: 100%;
 }
 
 .header {
     background-color: black;
-
-    /* background-color: red */
     margin-top: 0;
     height: 12%;
     width: 100%;
     display: flex;
-    /* position: sticky;
-    top: 0; */
-    /* border-bottom: 1px solid white; */
     box-shadow: 0px 5px 30px rgba(169, 159, 159, 0.2);
 }
 
@@ -68,7 +58,6 @@ body {
 }
 
 .content-img {
-    /* background-color: antiquewhite; */
     height: 80px;
     margin-left: 10px;
 }
@@ -96,8 +85,6 @@ body {
 
 .items-list {
     /* background-color: yellow; */
-    /* width: 60%;
-    height: 80%; */
     margin-top: 30px;
     margin-bottom: 30px;
     list-style-type: none;
@@ -138,7 +125,6 @@ a:hover {
     height: 40px;
     font-weight: bold;
     box-shadow: 4px 5px 30px rgba(169, 159, 159, 0.2);
-    /* border: 0.1px solid white; */
     cursor: pointer;
 }
 
@@ -250,7 +236,6 @@ a:hover {
     height: 10%;
     margin: 0px;
     padding-left: 8%;
-    /* margin-left: 40px; */
     font-size: 30px;
 
 
@@ -295,12 +280,9 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* margin-top: 10px; */
 }
 
 .content-price h2 {
-    /* background-color: aqua; */
-    /* height: 100%; */
     font-size: 30px;
     margin-top: 5px;
 }
@@ -319,16 +301,9 @@ a:hover {
     width: 100%;
     height: 20%;
     padding-top: 20px;
-    /* margin-left: 40px; */
 }
 
-/* .content-details-cars img{
-
-} */
 .container-gallery {
-    /* background-color:   tomato; */
-    /* padding-top: 20px; */
-     /* padding-inline: 40px;  */
     height: 43%;
     width: 100%;
     display: flex;
@@ -337,7 +312,6 @@ a:hover {
 
 .content-gallery {
     /* background-color: yellow; */
-     /* max-width: 1200px;  */
     margin: 10px auto;
     padding: 20px 40px 20px 30px;
     width: 100%;
@@ -352,7 +326,7 @@ a:hover {
 .content-gallery img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Recorta o ajusta la imagen para cubrir bien el espacio */
+  object-fit: cover; 
   display: block;
 }
 .content-gallery img:hover{
@@ -368,11 +342,11 @@ a:hover {
 }
 
 .info-person img {
-    /* position: absolute; */
+   
     border-radius: 50px;
     top: 5px;
     left: 16px;
-    /* padding-top: 10px ; */
+    
 }
 .info-person img:hover{
     width: 100px;
@@ -382,7 +356,6 @@ a:hover {
 }
 
 .info-person {
-    /* background-color: blue; */
     width: 50%;
     display: flex;
     flex-direction: row;
@@ -461,8 +434,17 @@ a:hover {
   transition: transform 0.4s ease;
 }
 @media (max-width: 768px) {
-  /* Reorganiza la cabecera en columna */
+   html, body {
+    overflow-x: hidden;
+  }
+   /* .container-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  } */
+
   .header {
+    width: 100%;
     flex-direction: column;
     height: auto;
     padding: 10px 0;
@@ -470,7 +452,9 @@ a:hover {
     margin: 0;
   }
   .logo{
-    margin: o;
+    margin: 0;
+    width: 180px;
+    height: auto;
   }
 
   .container-header {
@@ -496,21 +480,24 @@ a:hover {
   }
 
   .info {
+      display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 1em;
     margin-top: 10px;
+    flex-wrap: wrap;
   }
 
   .profile {
     margin-right: 0;
   }
-  /* Layout principal cambia a columna */
+
   .principal {
     flex-direction: column;
+    width: 100%;
   }
 
-  /* Sidebar ocupa ancho completo en móvil */
+  
   .sidebar {
 
     height: auto !important;
@@ -541,14 +528,14 @@ a:hover {
     font-size: 14px;
     padding: 5px 10px;
   }
-  /* Ajuste para contenido principal */
+  
   .body-page {
     width: 100%;
   }
 
   .container-details {
     flex-direction: column;
-    padding: 10px;
+    /* padding: 10px; */
     gap: 20px;
   }
 
@@ -643,4 +630,9 @@ a:hover {
     padding: 10px;
     font-size: 16px;
   }
+  .content-details {
+  width: 100%;
+  height: auto;
+  padding-right: 0; /* ← eliminar el padding que causaba el desbordamiento */
+}
 }
